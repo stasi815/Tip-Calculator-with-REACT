@@ -7,9 +7,9 @@ class CalcForm extends Component {
         super(props)
         this.state = {
             name: '',
-            inputBill: "",
-            partySize: "",
-            inputTip: "",
+            inputBill: '',
+            partySize: '',
+            inputTip: '',
         }
     }
 
@@ -18,6 +18,14 @@ class CalcForm extends Component {
         let bill = parseFloat(inputBill)
         let tipPercent = parseInt(inputTip)
         let people = parseInt(partySize)
+
+        if (isNaN(bill) || isNaN(tipPercent)) {
+            return (
+                <div>
+                    Enter valid bill and/or tip
+               </div>
+            )
+        }
 
         let tip = bill * tipPercent/100
         let total = bill + tip
