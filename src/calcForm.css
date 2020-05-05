@@ -1,0 +1,34 @@
+.calc-form {
+    height: 275;
+    border-style: solid;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.output {
+    height: 275;
+    border-style: solid;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.input {
+    padding: 2em;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    width: 15em;
+    justify-content: center;
+}
