@@ -7,9 +7,9 @@ class CalcForm extends Component {
         super(props)
         this.state = {
             name: '',
-            inputBill: 0,
-            partySize: 0,
-            inputTip: 0,
+            inputBill: "",
+            partySize: "",
+            inputTip: "",
         }
     }
 
@@ -26,13 +26,13 @@ class CalcForm extends Component {
         return(
             <div className="output">
                 <div>
-                    Tip: ${ tip }
+                    Tip: ${ tip.toFixed(2) }
                 </div>
                 <div>
-                    Bill Total w/ Tip: ${ total }
+                    Bill Total w/ Tip: ${ total.toFixed(2) }
                 </div>
                 <div>
-                    Bill Per Person: ${ partySplitBill }
+                    Bill Per Person: ${ partySplitBill.toFixed(2) }
                 </div>
             </div>
         )
