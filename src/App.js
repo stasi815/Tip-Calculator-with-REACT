@@ -4,9 +4,9 @@ import CalcForm from './calcForm';
 
 function App() {
   return (
-    <div className="App">
-      <CalcForm />
-    </div>
+      <div className="App">
+        <CalcForm />
+      </div>
   );
 }
 
