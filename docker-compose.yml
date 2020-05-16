@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
 
-  tipcalc:
-    container_name: tipcalc
+  tip-calc:
+    container_name: tip-calc
     build:
       context: .
       dockerfile: Dockerfile
