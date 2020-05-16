@@ -19,7 +19,7 @@ The Dockerfile is used to connect to my CapRover server through DigitalOcean
     `-v /app/node_modules \`
     `-p 3001:3000 \`
     `-e CHOKIDAR_USEPOLLING=true \`
-    `sample:dev `
+    `tipcalc:dev `
 
 
 ## Learn More
